@@ -156,7 +156,6 @@ nav.scrolled {
 
 /* Hero Section */
 .main {
-    mmmin-height: 100dvh;
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 50%, #1e40af 100%);
     display: flex;
     align-items: center;
@@ -181,7 +180,6 @@ nav.scrolled {
 
 /* Hero Section */
 .hero {
-    mmmin-height: 100dvh;
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 50%, #1e40af 100%);
     display: flex;
     align-items: center;
@@ -213,8 +211,6 @@ nav.scrolled {
 }
 .hero-main {
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 50%, #1e40af 100%);
-    
-    mmax-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1.5rem;
     text-align: center;
