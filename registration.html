@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="scripts/script.js" defer></script>
 </head>
-<body style="padding-top: 0px;">
+<body>
     <!-- Fixed Navigation -->
     <nav id="navbar">
         <div class="nav-container">
@@ -30,62 +30,115 @@
                 <span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
 				<li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="committee.html" class="nav-link">Committee</a></li>
                 <li><a href="authors.html" class="nav-link"> Authors</a></li>
                 <li><a href="special-track.html" class="nav-link">Special Tracks</a></li>
                 <li><a href="timeline.html" class="nav-link"> Timeline</a></li>
-                <li><a href="registration.html" class="nav-link">Registration</a></li>
+                <li><a href="registration.html" class="nav-link active">Registration</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- main Section -->
-    <section id="home"  class="mainn">
-        <div class="hero-main">
-      <h1>2nd International Conference on <br>Advances in Artificial Intelligence for Society</h1>
-            <p class="hero-subtitle">Theme: AI for Social</p>	
-			<p class="hero-date" style="display:inline-flex; align-items:center;  white-space:nowrap;">
-  <span>  📅 December 11-12, 2026</span>  <span>
-</p>
-
-
-<p >
-  Organized by    
-  <a href="https://iiitbhopal.ac.in" target="_blank" class="hero-date" style="
-    color:#f59e0b;
-    text-decoration:none;
-    position:relative;
-    transition:0.3s;
-  ">     Indian Institute of Information Technology Bhopal, India
-  </a> 
-  in collaboration with 
-  <a href="https://vizja.pl/en/" target="_blank" class="hero-date" style="
-    color:#f59e0b;
-    text-decoration:none;
-    position:relative;
-    transition:0.3s;
-  "> University of Vizja, Warsaw, Poland.
-  </a>
-</p> <br>
-
-		<div class="hero-img">
-			<img src="Assets/page.jpg" width="100%">
-		<br>
-		<marquee direction="left"><p class="hero-date">
-  The conference will be organized in hybrid (online + offline) mode. </p>
-</marquee>
-		</div>
-			
- 
-            <div class="hero-cta">
-                <a href="authors.html" class="cta-button cta-primary">Call for Papers</a>
-                <a href="special-track.html" class="cta-button cta-primary">Call for  Spacial Track</a>
+    <!-- Registration Section -->
+    <section id="registration">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Conference Registration</h2>
+                <p class="section-description">
+                    Choose the registration type that best suits your needs
+                </p>
             </div>
-	 
-	 </div>
+			
+<!-- ================= DESKTOP TABLE ================= -->
+<div class="table-container desktop-table">
+<table>
+
+<tr>
+<th rowspan="3">Author Category</th>
+<th colspan="4">Registration Type</th>
+</tr>
+
+<tr>
+<th colspan="2">Indian (₹)</th>
+<th colspan="2">Overseas (USD)</th>
+</tr>
+
+<tr>
+<th>Early</th>
+<th>Regular</th>
+<th>Early</th>
+<th>Regular</th>
+</tr>
+
+<tr><td>Student (author)</td><td>11000</td><td>13000</td><td>300</td><td>500</td></tr>
+<tr><td>Academician (author)</td><td>13000</td><td>15000</td><td>500</td><td>650</td></tr>
+<tr><td>Industry (author)</td><td>15000</td><td>18000</td><td>600</td><td>750</td></tr>
+<tr><td>Student (non-author)</td><td>5000</td><td>7000</td><td>100</td><td>200</td></tr>
+<tr><td>Academician (non-author)</td><td>7000</td><td>9000</td><td>200</td><td>300</td></tr>
+<tr><td>Industry (non-author)</td><td>10000</td><td>12000</td><td>250</td><td>350</td></tr>
+<tr><td>Additional Paper *</td><td>8000</td><td>10000</td><td>250</td><td>450</td></tr>
+<tr><td>Extra Page (Per Page)</td><td>1000</td><td>1000</td><td>25</td><td>25</td></tr>
+
+</table>
+</div>
+
+<!-- ================= MOBILE INDIAN TABLE ================= -->
+<div class="mobile-table">
+
+<div class="caption">Indian (₹)</div>
+
+<table>
+<tr>
+<th>Category</th>
+<th>Early</th>
+<th>Regular</th>
+</tr>
+
+<tr><td>Student (author)</td><td>11000</td><td>13000</td></tr>
+<tr><td>Academician (author)</td><td>13000</td><td>15000</td></tr>
+<tr><td>Industry (author)</td><td>15000</td><td>18000</td></tr>
+<tr><td>Student (non-author)</td><td>5000</td><td>7000</td></tr>
+<tr><td>Academician (non-author)</td><td>7000</td><td>9000</td></tr>
+<tr><td>Industry (non-author)</td><td>10000</td><td>12000</td></tr>
+<tr><td>Additional Paper *</td><td>8000</td><td>10000</td></tr>
+<tr><td>Extra Page (Per Page)</td><td>1000</td><td>1000</td></tr>
+
+</table>
+
+</div>
+
+<!-- ================= MOBILE OVERSEAS TABLE ================= -->
+<div class="mobile-table">
+
+<div class="caption">Overseas (USD)</div>
+
+<table>
+<tr>
+<th>Category</th>
+<th>Early</th>
+<th>Regular</th>
+</tr>
+
+<tr><td>Student (author)</td><td>300</td><td>500</td></tr>
+<tr><td>Academician (author)</td><td>500</td><td>650</td></tr>
+<tr><td>Industry (author)</td><td>600</td><td>750</td></tr>
+<tr><td>Student (non-author)</td><td>100</td><td>200</td></tr>
+<tr><td>Academician (non-author)</td><td>200</td><td>300</td></tr>
+<tr><td>Industry (non-author)</td><td>250</td><td>350</td></tr>
+<tr><td>Additional Paper *</td><td>250</td><td>450</td></tr>
+<tr><td>Extra Page (Per Page)</td><td>25</td><td>25</td></tr>
+
+</table>
+
+</div>
+			
+			
+			
+			
+      </div>
     </section>
 
     <!-- Footer -->
