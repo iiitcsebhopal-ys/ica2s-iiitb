@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICA2S 2026 -  International Conference on Advances in Artificial Intelligence for Society</title>
+    <title>ICA2S 2026 - International Conference on Advances in Artificial Intelligence for Society</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Work+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
 
     <style>
@@ -20,28 +23,31 @@
             --text-light: #64748b;
             --nav-height: 70px;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         html {
             scroll-behavior: smooth;
             scroll-padding-top: var(--nav-height);
         }
-        
+
         body {
             font-family: 'Work Sans', sans-serif;
             color: var(--text-dark);
             line-height: 1.6;
             overflow-x: hidden;
-			word-wrap: break-word;
-			overflow-wrap: break-word;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
-		a{ color: var(--accent-gold);}
-        
+
+        a {
+            color: var(--accent-gold);
+        }
+
         /* Fixed Navigation */
         nav {
             position: fixed;
@@ -54,11 +60,11 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
-        
+
         nav.scrolled {
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
         }
-        
+
         .nav-container {
             max-width: 1400px;
             margin: 0 auto;
@@ -68,7 +74,7 @@
             justify-content: space-between;
             padding: 0 1.5rem;
         }
-        
+
         .logo {
             font-family: 'Playfair Display', serif;
             font-size: 1.5rem;
@@ -80,12 +86,12 @@
             gap: 0.5rem;
             z-index: 1001;
         }
-        
+
         .logo-accent {
             color: var(--accent-gold);
             font-size: 1.7rem;
         }
-        
+
         /* Hamburger Menu */
         .menu-toggle {
             display: none;
@@ -96,7 +102,7 @@
             border: none;
             padding: 0.5rem;
         }
-        
+
         .menu-toggle span {
             width: 25px;
             height: 3px;
@@ -105,30 +111,30 @@
             transition: all 0.3s ease;
             border-radius: 3px;
         }
-        
+
         .menu-toggle.active span:nth-child(1) {
             transform: rotate(45deg) translate(7px, 7px);
         }
-        
+
         .menu-toggle.active span:nth-child(2) {
             opacity: 0;
         }
-        
+
         .menu-toggle.active span:nth-child(3) {
             transform: rotate(-45deg) translate(7px, -7px);
         }
-        
+
         .nav-menu {
             display: flex;
             list-style: none;
             gap: 0;
             align-items: center;
         }
-        
+
         .nav-menu li {
             position: relative;
         }
-        
+
         .nav-menu a {
             display: block;
             padding: 0.75rem 1.5rem;
@@ -140,7 +146,7 @@
             transition: all 0.3s ease;
             position: relative;
         }
-        
+
         .nav-menu a::before {
             content: '';
             position: absolute;
@@ -152,20 +158,20 @@
             transform: translateX(-50%);
             transition: width 0.3s ease;
         }
-        
+
         .nav-menu a:hover {
             color: white;
         }
-        
+
         .nav-menu a:hover::before {
             width: 60%;
         }
-        
+
         .nav-menu a.active {
             color: var(--accent-gold);
         }
-        
-      /* Hero Section */
+
+        /* Hero Section */
         .main {
             min-height: 100dvh;
             background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 50%, #1e40af 100%);
@@ -176,7 +182,7 @@
             overflow: hidden;
             padding-top: var(--nav-height);
         }
-        
+
         .main::before {
             content: '';
             position: absolute;
@@ -198,16 +204,16 @@
             align-items: center;
             justify-content: center;
             position: relative;
-            
+
         }
-        
+
         .hero::before {
             content: '';
             position: absolute;
             background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)" /></svg>');
             opacity: 0.5;
         }
-        
+
         .hero-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -216,22 +222,23 @@
             position: relative;
             z-index: 1;
         }
-        
+
         .hero-img {
-            
+
             max-width: 1200px;
             margin: 0px auto;
         }
+
         .hero-main {
             background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 50%, #1e40af 100%);
-            
+
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem 1.5rem;
             text-align: center;
             position: relative;
             z-index: 1;
-            color:white;
+            color: white;
         }
 
         .hero-badge {
@@ -246,9 +253,9 @@
             border: 2px solid var(--accent-gold);
             animation: fadeInUp 0.8s ease-out;
         }
-        
+
         .hero h1 {
-            
+
             font-size: clamp(1.6rem, 5vw, 2.5rem);
             font-weight: 900;
             color: white;
@@ -257,8 +264,8 @@
             animation: fadeInUp 0.8s ease-out 0.2s both;
         }
 
-                .hero-main h1 {
-           
+        .hero-main h1 {
+
             font-size: clamp(1.6rem, 5vw, 2.5rem);
             font-weight: 900;
             color: white;
@@ -266,7 +273,7 @@
             margin-bottom: 1rem;
             animation: fadeInUp 0.8s ease-out 0.2s both;
         }
-        
+
         .hero-subtitle {
             font-size: 1.1rem;
             color: rgba(255, 255, 255, 0.9);
@@ -274,7 +281,7 @@
             font-weight: 300;
             animation: fadeInUp 0.8s ease-out 0.4s both;
         }
-        
+
         .hero-date {
             font-size: 1rem;
             color: var(--accent-gold);
@@ -282,7 +289,7 @@
             font-weight: 600;
             animation: fadeInUp 0.8s ease-out 0.6s both;
         }
-        
+
         .hero-cta {
             display: flex;
             flex-direction: column;
@@ -290,7 +297,7 @@
             align-items: center;
             animation: fadeInUp 0.8s ease-out 0.8s both;
         }
-        
+
         .cta-button {
             padding: 1rem 2rem;
             font-size: 1rem;
@@ -304,57 +311,58 @@
             min-width: 200px;
             text-align: center;
         }
-        
+
         .cta-primary {
             background: var(--accent-gold);
             color: var(--primary-dark);
         }
-        
+
         .cta-primary:hover {
             background: #d97706;
             transform: translateY(-2px);
             box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
         }
-        
+
         .cta-secondary {
             background: transparent;
             color: white;
             border: 2px solid white;
         }
-        
+
         .cta-secondary:hover {
             background: white;
             color: var(--primary-blue);
             transform: translateY(-2px);
         }
-        
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         /* Section Styles */
         section {
             padding: 4rem 0;
         }
-        
+
         .section-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1.5rem;
         }
-        
+
         .section-header {
             text-align: center;
             margin-bottom: 3rem;
         }
-        
+
         .section-badge {
             display: inline-block;
             background: rgba(30, 58, 138, 0.1);
@@ -365,7 +373,7 @@
             font-weight: 600;
             margin-bottom: 1rem;
         }
-        
+
         .section-title {
             font-family: 'Playfair Display', serif;
             font-size: 2rem;
@@ -373,7 +381,7 @@
             color: var(--text-dark);
             margin-bottom: 1rem;
         }
-        
+
         .section-description {
             font-size: 1rem;
             color: var(--text-light);
@@ -381,35 +389,35 @@
             margin: 0 auto;
             line-height: 1.7;
         }
-        
+
         /* About Section */
         #about {
             background: var(--light-bg);
         }
-        
+
         .about-content {
             display: grid;
             gap: 2rem;
             margin-top: 2rem;
         }
-        
+
         .about-text {
             font-size: 1.05rem;
             color: var(--text-dark);
             line-height: 1.8;
         }
-        
+
         .about-text p {
             margin-bottom: 1.25rem;
         }
-        
+
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
             gap: 1.5rem;
             margin-top: 2.5rem;
         }
-        
+
         .stat-card {
             background: white;
             padding: 1.5rem;
@@ -418,12 +426,12 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .stat-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         }
-        
+
         .stat-number {
             font-family: 'Playfair Display', serif;
             font-size: 2rem;
@@ -432,12 +440,12 @@
             display: block;
             margin-bottom: 0.25rem;
         }
-        
+
         .stat-label {
             font-size: 0.9rem;
             color: var(--text-light);
         }
-        
+
         /* Themes Section */
         .themes-grid {
             display: grid;
@@ -445,7 +453,7 @@
             gap: 1.5rem;
             margin-top: 2rem;
         }
-        
+
         .theme-card {
             background: white;
             padding: 1.75rem;
@@ -454,43 +462,43 @@
             transition: all 0.3s ease;
             border-top: 4px solid var(--accent-teal);
         }
-        
+
         .theme-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
         }
-        
+
         .theme-icon {
             font-size: 1 rem;
             margin-bottom: 1rem;
-			font-style:bold;
+            font-style: bold;
             display: block;
         }
-        
+
         .theme-card h3 {
             font-size: 1.25rem;
             color: var(--text-dark);
             margin-bottom: 0.75rem;
             font-weight: 600;
         }
-        
+
         .theme-card p {
             color: var(--text-light);
             font-size: 0.95rem;
             line-height: 1.6;
         }
-        
+
         /* Timeline Section */
         #dates {
             background: var(--light-bg);
         }
-        
+
         .timeline {
             max-width: 800px;
             margin: 2rem auto 0;
             position: relative;
         }
-        
+
         .timeline::before {
             content: '';
             position: absolute;
@@ -500,13 +508,13 @@
             width: 2px;
             background: var(--accent-gold);
         }
-        
+
         .timeline-item {
             position: relative;
             padding-left: 60px;
             margin-bottom: 2rem;
         }
-        
+
         .timeline-dot {
             position: absolute;
             left: 11px;
@@ -518,27 +526,27 @@
             border: 4px solid var(--light-bg);
             z-index: 1;
         }
-        
+
         .timeline-content {
             background: white;
             padding: 1.25rem 1.5rem;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
-        
+
         .timeline-date {
             font-weight: 600;
             color: var(--primary-blue);
             margin-bottom: 0.5rem;
             font-size: 0.95rem;
         }
-        
+
         .timeline-title {
             font-size: 1.1rem;
             color: var(--text-dark);
             font-weight: 600;
         }
-        
+
         /* Committee Section */
         .committee-grid {
             display: grid;
@@ -546,7 +554,7 @@
             gap: 1.5rem;
             margin-top: 2rem;
         }
-        
+
         .committee-card {
             background: white;
             padding: 1.75rem;
@@ -555,17 +563,15 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
         }
-        
+
         .committee-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
         }
-        
+
         .committee-photo {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary-blue), var(--accent-teal));
+            width: 200px;
+            height: 200px;
             margin: 0 auto 1rem;
             display: flex;
             align-items: center;
@@ -573,38 +579,38 @@
             font-size: 2.5rem;
             color: white;
         }
-        
+
         .committee-card h3 {
             font-size: 1.1rem;
             color: var(--text-dark);
             margin-bottom: 0.25rem;
             font-weight: 600;
         }
-        
+
         .committee-role {
             color: var(--primary-blue);
             font-weight: 600;
             font-size: 0.9rem;
             margin-bottom: 0.5rem;
         }
-        
+
         .committee-affiliation {
             color: var(--text-light);
             font-size: 0.85rem;
         }
-        
+
         /* Registration Section */
         #registration {
             background: var(--light-bg);
         }
-        
+
         .registration-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
             margin-top: 2rem;
         }
-        
+
         .registration-card {
             background: white;
             padding: 2rem 1.5rem;
@@ -613,19 +619,19 @@
             transition: all 0.3s ease;
             text-align: center;
         }
-        
+
         .registration-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
         }
-        
+
         .registration-type {
             font-size: 1.25rem;
             font-weight: 700;
             color: var(--primary-blue);
             margin-bottom: 1rem;
         }
-        
+
         .registration-price {
             font-family: 'Playfair Display', serif;
             font-size: 2.5rem;
@@ -633,33 +639,33 @@
             color: var(--text-dark);
             margin-bottom: 1.5rem;
         }
-        
+
         .registration-price span {
             font-size: 1rem;
             color: var(--text-light);
             font-family: 'Work Sans', sans-serif;
         }
-        
+
         .registration-features {
             list-style: none;
             margin-bottom: 1.5rem;
             text-align: left;
         }
-        
+
         .registration-features li {
             padding: 0.5rem 0;
             color: var(--text-dark);
             font-size: 0.9rem;
             border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
-        
+
         .registration-features li::before {
             content: '✓';
             color: var(--accent-teal);
             font-weight: bold;
             margin-right: 0.75rem;
         }
-        
+
         .register-button {
             width: 100%;
             padding: 0.9rem;
@@ -672,25 +678,25 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
-        
+
         .register-button:hover {
             background: var(--primary-dark);
             transform: translateY(-2px);
         }
-        
+
         /* Contact Section */
         .contact-container {
             display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
-        
+
         .contact-info {
             display: grid;
             gap: 1.5rem;
         }
-        
+
         .contact-item {
             display: flex;
             gap: 1.25rem;
@@ -699,41 +705,41 @@
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
-        
+
         .contact-icon {
             font-size: 2rem;
             flex-shrink: 0;
         }
-        
+
         .contact-details h3 {
             font-size: 1.1rem;
             color: var(--text-dark);
             margin-bottom: 0.5rem;
             font-weight: 600;
         }
-        
+
         .contact-details p {
             color: var(--text-light);
             font-size: 0.95rem;
             margin-bottom: 0.25rem;
         }
-        
+
         .contact-details a {
             color: var(--primary-blue);
             text-decoration: none;
         }
-        
+
         .contact-form {
             background: white;
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
-        
+
         .form-group {
             margin-bottom: 1.5rem;
         }
-        
+
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
@@ -741,7 +747,7 @@
             font-weight: 600;
             font-size: 0.95rem;
         }
-        
+
         .form-group input,
         .form-group textarea {
             width: 100%;
@@ -752,18 +758,18 @@
             font-size: 0.95rem;
             transition: border-color 0.3s ease;
         }
-        
+
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
             border-color: var(--primary-blue);
         }
-        
+
         .form-group textarea {
             resize: vertical;
             min-height: 130px;
         }
-        
+
         .submit-button {
             width: 100%;
             padding: 0.9rem;
@@ -776,33 +782,33 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
-        
+
         .submit-button:hover {
             background: #d97706;
             transform: translateY(-2px);
         }
-        
+
         /* Footer */
         footer {
             background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 100%);
             color: white;
             padding: 3rem 0 1.5rem;
         }
-        
+
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 1.5rem;
             text-align: center;
         }
-        
+
         .footer-logo {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             font-weight: 900;
             margin-bottom: 1rem;
         }
-        
+
         .footer-links {
             display: flex;
             flex-wrap: wrap;
@@ -810,77 +816,88 @@
             gap: 1.5rem;
             margin: 2rem 0;
         }
-        
+
         .footer-links a {
             color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
             font-size: 0.95rem;
             transition: color 0.3s ease;
         }
-        
+
         .footer-links a:hover {
             color: var(--accent-gold);
         }
-        
+
         .footer-copyright {
             padding-top: 2rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: rgba(255, 255, 255, 0.6);
             font-size: 0.85rem;
         }
-		
-.table-container{
-  width:100%;
-  overflow-x:auto;
-}
 
-/* Common table style */
-table{
-  border-collapse:collapse;
-  width:100%;
-  margin-bottom:20px;
-}
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
 
-th, td{
-  border:1px solid #ddd;
-  padding:10px;
-  text-align:center;
-}
+        /* Common table style */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
 
-th{
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
 
-}
+        th {}
 
-tr:nth-child(even){
-  background:#f9f9f9;
-}
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
 
-/* Hide mobile tables on desktop */
-.mobile-table{   display:none; }
+        /* Hide mobile tables on desktop */
+        .mobile-table {
+            display: none;
+        }
 
-.caption{
-  font-size:20px;
-  font-weight:bold;
-  margin:15px 0;
-}
-        
+        .caption {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
         /* Mobile Responsive Styles */
         @media (max-width: 789px) {
-		
-		.hero-main { min-height: 100dvh; }
-		
-        .main { min-height: 100dvh; }
-		.desktop-table{  display:none;}
 
-		.mobile-table{   display:block; }
+            .hero-main {
+                min-height: 100dvh;
+            }
+
+            .main {
+                min-height: 100dvh;
+            }
+
+            .desktop-table {
+                display: none;
+            }
+
+            .mobile-table {
+                display: block;
+            }
+
             :root {
                 --nav-height: 60px;
             }
-            
+
             .menu-toggle {
                 display: flex;
             }
-            
+
             .nav-menu {
                 position: fixed;
                 top: var(--nav-height);
@@ -895,30 +912,30 @@ tr:nth-child(even){
                 transition: left 0.3s ease;
                 overflow-y: auto;
             }
-            
+
             .nav-menu.active {
                 left: 0;
             }
-            
+
             .nav-menu li {
                 width: 100%;
                 text-align: center;
             }
-            
+
             .nav-menu a {
                 padding: 1rem;
                 font-size: 1.1rem;
                 width: 100%;
             }
-            
+
             .nav-menu a::before {
                 display: none;
             }
-            
+
             .hero h1 {
                 font-size: 2rem;
             }
-            
+
             .hero-main h1 {
                 font-size: 2rem;
             }
@@ -926,141 +943,149 @@ tr:nth-child(even){
             .hero-subtitle {
                 font-size: 1rem;
             }
-            
+
             .hero-cta {
                 width: 100%;
                 max-width: 300px;
                 margin: 0 auto;
             }
-            
+
             .cta-button {
                 width: 100%;
             }
-            
+
             .section-title {
                 font-size: 1.75rem;
             }
-            
+
             .section-description {
                 font-size: 0.95rem;
             }
-            
+
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
+
             .themes-grid,
             .committee-grid,
             .registration-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .timeline::before {
                 left: 15px;
             }
-            
+
             .timeline-item {
                 padding-left: 50px;
             }
-            
+
             .timeline-dot {
                 left: 6px;
             }
-            
+
             .contact-container {
                 grid-template-columns: 1fr;
             }
-            
+
             .footer-links {
                 flex-direction: column;
                 gap: 1rem;
             }
         }
-        
+
         @media (max-width: 480px) {
             .logo {
                 font-size: 1.2rem;
             }
-            
+
             .logo-accent {
                 font-size: 1.4rem;
             }
-            
+
             .hero h1 {
                 font-size: 1.75rem;
             }
+
             .hero-main h1 {
                 font-size: 1.75rem;
-            }            
+            }
+
             .stats-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .registration-price {
                 font-size: 2rem;
             }
         }
-        
+
         /* Tablet Responsive */
         @media (min-width: 769px) and (max-width: 1024px) {
             .nav-menu a {
                 padding: 0.75rem 1rem;
                 font-size: 0.9rem;
             }
-            
+
             .hero h1 {
                 font-size: 3rem;
             }
-            
+
 
             .hero-main h1 {
                 font-size: 3rem;
             }
+
             .themes-grid,
             .committee-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
-		
-		.hero-subtitle a::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:-3px;
-  width:0;
-  height:2px;
-  background:#f59e0b;
-  transition:0.3s;
-}
 
-.hero-subtitle a:hover{
-  color:#fff;
-  text-shadow:0 0 8px rgba(245,158,11,0.8);
-}
+        .hero-subtitle a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #f59e0b;
+            transition: 0.3s;
+        }
 
-.hero-subtitle a:hover::after{
-  width:100%;
-}
+        .hero-subtitle a:hover {
+            color: #fff;
+            text-shadow: 0 0 8px rgba(245, 158, 11, 0.8);
+        }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+        .hero-subtitle a:hover::after {
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
     </style>
 </head>
+
 <body>
     <!-- Fixed Navigation -->
     <nav id="navbar">
         <div class="nav-container">
             <div class="logo">
-			<span style="display:flex; align-items:center; justify-content:flex-start; gap:20px; white-space:nowrap;">
-    <a href="https://www.ica2s.com/" target="_blank" > <img src="logo.png" style="height:50px; width:auto;"> </a>
-    <a href="https://iiitbhopal.ac.in/" target="_blank" ><img src="logo-iiitb.png" style="height:50px; width:auto;"> </a>
-  <a href="https://vizja.pl/en/" target="_blank" ><img src="logo-v.png" style="height:50px; width:auto;"> </a>
-</span>
+                <span
+                    style="display:flex; align-items:center; justify-content:flex-start; gap:20px; white-space:nowrap;">
+                    <a href="https://www.ica2s.com/" target="_blank"> <img src="Assets/logo.png"
+                            style="height:50px; width:auto;"> </a>
+                    <a href="https://iiitbhopal.ac.in/" target="_blank"><img src="Assets/logo-iiitb.png"
+                            style="height:50px; width:auto;"> </a>
+                    <a href="https://vizja.pl/en/" target="_blank"><img src="Assets/logo-v.png"
+                            style="height:50px; width:auto;"> </a>
+                </span>
 
-                 
+
             </div>
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
                 <span></span>
@@ -1068,14 +1093,14 @@ img {
                 <span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-				<li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#committee" class="nav-link">Committee</a></li>
-                <li><a href="#for-authors" class="nav-link"> Authors</a></li>
-                <li><a href="#special-track" class="nav-link">Special Tracks</a></li>
-                <li><a href="#timeline" class="nav-link"> Timeline</a></li>
-                <li><a href="#registration" class="nav-link">Registration</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="pages/home.html" class="nav-link active">Home</a></li>
+                <li><a href="pages/about.html" class="nav-link">About</a></li>
+                <li><a href="pages/committee.html" class="nav-link">Committee</a></li>
+                <li><a href="pages/authors.html" class="nav-link"> Authors</a></li>
+                <li><a href="pages/special_track.html" class="nav-link">Special Tracks</a></li>
+                <li><a href="pages/timeline.html" class="nav-link"> Timeline</a></li>
+                <li><a href="pages/registration.html" class="nav-link">Registration</a></li>
+                <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -1111,63 +1136,64 @@ img {
 </p>
 
 		
-			<img src="page.jpg" width="100%">
+			<img src="Assets/page.jpg" width="100%">
 		<marquee direction="left"><p class="hero-date">
   The conference will be organized in hybrid (online + offline) mode. </p>
 </marquee>	
  
             <div class="hero-cta">
-                <a href="#for-authors" class="cta-button cta-primary">Call for Papers</a>
-                <a href="#special-track" class="cta-button cta-secondary">Call for  Spacial Track</a>
+                <a href="pages/authors.html" class="cta-button cta-primary">Call for Papers</a>
+                <a href="pages/special_track.html" class="cta-button cta-secondary">Call for  Spacial Track</a>
             </div>
 
         </div>
     </section>
 -->
     <!-- main Section -->
-    <section id="home"  class="mainn">
+    <section id="home" class="mainn">
         <div class="hero-main">
-      <h1>2nd International Conference on <br>Advances in Artificial Intelligence for Society</h1>
-            <p class="hero-subtitle">Theme: AI for Social</p>	
-			<p class="hero-date" style="display:inline-flex; align-items:center;  white-space:nowrap;">
-  <span>  📅 December 11-12, 2026</span>  <span>
-</p>
+            <h1>2nd International Conference on <br>Advances in Artificial Intelligence for Society</h1>
+            <p class="hero-subtitle">Theme: AI for Social</p>
+            <p class="hero-date" style="display:inline-flex; align-items:center;  white-space:nowrap;">
+                <span> 📅 December 11-12, 2026</span> <span>
+            </p>
 
 
-<p >
-  Organized by    
-  <a href="https://iiitbhopal.ac.in" target="_blank" class="hero-date" style="
+            <p>
+                Organized by
+                <a href="https://iiitbhopal.ac.in" target="_blank" class="hero-date" style="
     color:#f59e0b;
     text-decoration:none;
     position:relative;
     transition:0.3s;
-  ">     Indian Institute of Information Technology Bhopal, India
-  </a> 
-  in collaboration with 
-  <a href="https://vizja.pl/en/" target="_blank" class="hero-date" style="
+  "> Indian Institute of Information Technology Bhopal, India
+                </a>
+                in collaboration with
+                <a href="https://vizja.pl/en/" target="_blank" class="hero-date" style="
     color:#f59e0b;
     text-decoration:none;
     position:relative;
     transition:0.3s;
   "> University of Vizja, Warsaw, Poland.
-  </a>
-</p> <br>
+                </a>
+            </p> <br>
 
-		<div class="hero-img">
-			<img src="page.jpg" width="100%">
-		<br>
-		<marquee direction="left"><p class="hero-date">
-  The conference will be organized in hybrid (online + offline) mode. </p>
-</marquee>
-		</div>
-			
- 
-            <div class="hero-cta">
-                <a href="#for-authors" class="cta-button cta-primary">Call for Papers</a>
-                <a href="#special-track" class="cta-button cta-primary">Call for  Spacial Track</a>
+            <div class="hero-img">
+                <img src="Assets/page.jpg" width="100%">
+                <br>
+                <marquee direction="left">
+                    <p class="hero-date">
+                        The conference will be organized in hybrid (online + offline) mode. </p>
+                </marquee>
             </div>
-	 
-	 </div>
+
+
+            <div class="hero-cta">
+                <a href="pages/authors.html" class="cta-button cta-primary">Call for Papers</a>
+                <a href="pages/special_track.html" class="cta-button cta-primary">Call for Spacial Track</a>
+            </div>
+
+        </div>
     </section>
 
 
@@ -1175,26 +1201,37 @@ img {
     <section id="about">
         <div class="section-container">
             <div class="section-header">
-                <span class="hero-badge"><h2>About ICA2S 2026 </h2></span>
+                <span class="hero-badge">
+                    <h2>About ICA2S 2026 </h2>
+                </span>
                 <h4 class="section-title">Exploring AI's Impact on Society and Future </h4>
                 <p class="section-description">
-                    Join leading researchers, industry experts, and policymakers in exploring how artificial intelligence can solve real-world challenges and create positive social impact.
+                    Join leading researchers, industry experts, and policymakers in exploring how artificial
+                    intelligence can solve real-world challenges and create positive social impact.
                 </p>
             </div>
             <div class="about-content">
                 <div class="about-text">
                     <p>
-					
-                        The International Conference on Advances in Artificial Intelligence for Society (ICA2S 2026) aims to bring together researchers, academicians, industry professionals, and policymakers to discuss the latest advancements in AI and its impact on society. 
-					 </p>
-                    <p>	
-						The International Conference on AI for Society (ICA2S) brings together brilliant minds from academia, industry, and government to explore how artificial intelligence can address pressing societal challenges. From healthcare to education, environmental sustainability to social equity, we examine AI's transformative potential.
+
+                        The International Conference on Advances in Artificial Intelligence for Society (ICA2S 2026)
+                        aims to bring together researchers, academicians, industry professionals, and policymakers to
+                        discuss the latest advancements in AI and its impact on society.
                     </p>
                     <p>
-                        Our conference features keynote speeches from world-renowned AI researchers, technical paper presentations, interactive workshops, and networking opportunities. Whether you're a researcher, practitioner, student, or policymaker, ICA2S offers valuable insights into the future of AI and society.
+                        The International Conference on AI for Society (ICA2S) brings together brilliant minds from
+                        academia, industry, and government to explore how artificial intelligence can address pressing
+                        societal challenges. From healthcare to education, environmental sustainability to social
+                        equity, we examine AI's transformative potential.
+                    </p>
+                    <p>
+                        Our conference features keynote speeches from world-renowned AI researchers, technical paper
+                        presentations, interactive workshops, and networking opportunities. Whether you're a researcher,
+                        practitioner, student, or policymaker, ICA2S offers valuable insights into the future of AI and
+                        society.
                     </p>
                 </div>
-              <!--  <div class="stats-grid">
+                <!--  <div class="stats-grid">
                     <div class="stat-card">
                         <span class="stat-number">200+</span>
                         <span class="stat-label">Attendees</span>
@@ -1221,38 +1258,44 @@ img {
     <section id="themes">
         <div class="section-container">
             <div class="section-header">
-      
+
                 <h2 class="section-title">Conference Themes: Explore Key Topics</h2>
                 <p class="section-description">
                     Our conference covers cutting-edge research and applications across multiple domains
                 </p>
             </div>
-            <div class="themes-grid"> 
-			 <div class="theme-card">
+            <div class="themes-grid">
+                <div class="theme-card">
                     <span class="theme-icon">🤖 Technological Innovations in AI </span>
-                    <p>  ◆ Breakthroughs in AI algorithms.<br>◆ AI in cloud computing.<br>◆ AI tools for real-time decision-making.  </p>
+                    <p> ◆ Breakthroughs in AI algorithms.<br>◆ AI in cloud computing.<br>◆ AI tools for real-time
+                        decision-making. </p>
                 </div>
-			
+
                 <div class="theme-card">
                     <span class="theme-icon">🏥 AI in Healthcare</span>
-                    <p> ◆ AI in diagnostics & precision medicine. <br> ◆ Generative AI for patient care.<br> ◆ AI in public health strategies. </p>
+                    <p> ◆ AI in diagnostics & precision medicine. <br> ◆ Generative AI for patient care.<br> ◆ AI in
+                        public health strategies. </p>
                 </div>
                 <div class="theme-card">
                     <span class="theme-icon"> ⚖️🔒 Ethics, Privacy, and Security in AI </span>
-                    
-                    <p>◆ Ethical AI frameworks.<br>◆ Cybersecurity in AI systems.<br>◆ Patient data privacy protection. </p>
+
+                    <p>◆ Ethical AI frameworks.<br>◆ Cybersecurity in AI systems.<br>◆ Patient data privacy protection.
+                    </p>
                 </div>
                 <div class="theme-card">
                     <span class="theme-icon">☁️🌍 Cloud Computing & AI: Scalability </span>
-                    <p>◆ AI with cloud platforms.<br>◆ Cloud-based AI solutions.<br>◆ Compliance & security in AI-cloud. </p>
+                    <p>◆ AI with cloud platforms.<br>◆ Cloud-based AI solutions.<br>◆ Compliance & security in AI-cloud.
+                    </p>
                 </div>
                 <div class="theme-card">
                     <span class="theme-icon"> 🏙️AI for Society: Sustainability & Equity</span>
-                    <p>◆ AI in emerging economies. <br>◆ AI & Sustainable Development Goals.<br> ◆ AI in underserved communities.</p>
+                    <p>◆ AI in emerging economies. <br>◆ AI & Sustainable Development Goals.<br> ◆ AI in underserved
+                        communities.</p>
                 </div>
                 <div class="theme-card">
                     <span class="theme-icon">🚀 Future Horizons in AI </span>
-                    <p>◆ AI & societal interactions.  <br>◆ Cross-disciplinary AI approaches.  <br> ◆ Preparing for general AI advancements. </p>
+                    <p>◆ AI & societal interactions. <br>◆ Cross-disciplinary AI approaches. <br> ◆ Preparing for
+                        general AI advancements. </p>
                 </div>
             </div>
         </div>
@@ -1267,269 +1310,295 @@ img {
                     Meet the experts leading this conference
                 </p>
             </div>
-			
-			
-
-<div class="section-header"> 
-<h2 class="section-title">Patrons</h2></div>
-<div class="committee-grid">
-<div class="committee-card">
-<div class="committee-photo">👤</div>
-<h3>Prof. (Dr.) Ashutosh Kumar Singh</h3>
-<div class="designation-role">Director</div>
-<div class="designation-affiliation">IIIT Bhopal, Madhya Pradesh, India</div>
-</div>
 
 
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="marcin.jpg" /></div>
-<h3>Prof. (Dr.) Marcin Staniewski</h3>
-<div class="designation-role">Vice Rector for Science</div>
-<div class="designation-affiliation">VIZJA University, Warsaw, Poland</div>
-</div>
-</div>
-<br>
-<div class="section-header"> 
-<h2 class="section-title">Advisory Board</h2></div>
-<div class="committee-grid">
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="buyya.jpg" /></div>
-<h3>Prof. (Dr.) Rajkumar Buyya</h3>
-<div class="designation-affiliation">University of Melbourne, Australia</div>
-</div>
 
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="hura.jpg" /></div>
-<h3>Prof. (Dr.) Gurdeep S. Hura</h3>
-<div class="designation-affiliation">University of Maryland Eastern Shore, Princess Anne, USA</div>
-</div>
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="volker.jpg" /></div>
-<h3>Prof. (Dr.) Volker Lindenstruth</h3>
-<div class="designation-affiliation">Goethe University, Frankfurt, Germany</div>
-</div>
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="wen.jpg" /></div>
-<h3>Prof. (Dr.) Xiaoqing Wen</h3>
-<div class="designation-affiliation">Kyushu Institute of Technology, Japan</div>
-</div>
-</div>
-
-<br> <div class="section-header"> 
-<h2 class="section-title">Honorary Chairs</h2></div>
-<div class="committee-grid">
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="schmid.jpg" /></div>
-<h3>Prof. (Dr.) Stefan Schmid</h3>
-<div class="designation-affiliation">Technical University of Berlin, Germany</div>
-</div>
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="lee.jpg" /></div>
-<h3>Prof. (Dr.) Chung-Nan Lee</h3>
-<div class="designation-affiliation">National Sun-Yat-Sen University, Kaohsiung, Taiwan</div>
-</div>
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="soh.jpg" /></div>
-<h3>Prof. (Dr.) Sie Teng Soh</h3>
-<div class="designation-affiliation">Curtin University, Bentley, Western Australia</div>
-</div>
-</div>
-
-<br> <div class="section-header"> 
-<h2 class="section-title">General Chairs</h2></div>
-<div class="committee-grid">
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="vinaytosh.jpg" /></div>
-<h3>Prof. (Dr.) Vinaytosh Mishra</h3>
-<div class="designation-affiliation">Gulf Medical University, UAE</div>
-</div>
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="garenth.jpg" /></div>
-<h3>Prof. (Dr.) Garenth Lim King Hann</h3>
-<div class="designation-affiliation">Curtin University, Malaysia</div>
-</div>
-</div>
+            <div class="section-header">
+                <h2 class="section-title">Patrons</h2>
+            </div>
+            <div class="committee-grid">
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 100%; height: auto;" src="Assets/People/ashutosh.jpg" /></div>
+                    <h3>Prof. (Dr.) Ashutosh Kumar Singh</h3>
+                    <div class="designation-role">Director</div>
+                    <div class="designation-affiliation">IIIT Bhopal, Madhya Pradesh, India</div>
+                </div>
 
 
-<br> <div class="section-header"> 
-<h2 class="section-title">Conference Chairs</h2></div>
-<div class="committee-grid">
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto;" src="Assets/People/marcin.avif" /></div>
+                    <h3>Prof. (Dr.) Marcin Staniewski</h3>
+                    <div class="designation-role">Vice Rector for Science</div>
+                    <div class="designation-affiliation">VIZJA University, Warsaw, Poland</div>
+                </div>
+            </div>
+            <br>
+            <div class="section-header">
+                <h2 class="section-title">Advisory Board</h2>
+            </div>
+            <div class="committee-grid">
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/buyya.jpeg" /></div>
+                    <h3>Prof. (Dr.) Rajkumar Buyya</h3>
+                    <div class="designation-affiliation">University of Melbourne, Australia</div>
+                </div>
 
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="jitendra.jpg" /></div>
-<h3>Dr. Jitendra Kumar</h3>
-<div class="designation-affiliation">Maulana Azad National Institute of Technology Bhopal, India</div>
-</div>
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/hura.jpeg" /></div>
+                    <h3>Prof. (Dr.) Gurdeep S. Hura</h3>
+                    <div class="designation-affiliation">University of Maryland Eastern Shore, Princess Anne, USA</div>
+                </div>
 
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="deepika.jpg" /></div>
-<h3>Dr. Deepika Saxena</h3>
-<div class="designation-affiliation">University of Aizu, Japan</div>
-</div>
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/volker.jpeg" /></div>
+                    <h3>Prof. (Dr.) Volker Lindenstruth</h3>
+                    <div class="designation-affiliation">Goethe University, Frankfurt, Germany</div>
+                </div>
 
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="aaisha.jpg" /></div>
-<h3>Dr. Aaisha Makkar</h3>
-<div class="designation-affiliation">University of Derby, United Kingdom</div>
-</div>
-</div>
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/wen.jpeg" /></div>
+                    <h3>Prof. (Dr.) Xiaoqing Wen</h3>
+                    <div class="designation-affiliation">Kyushu Institute of Technology, Japan</div>
+                </div>
+            </div>
 
+            <br>
+            <div class="section-header">
+                <h2 class="section-title">Honorary Chairs</h2>
+            </div>
+            <div class="committee-grid">
 
-<br> <div class="section-header"> 
-<h2 class="section-title">TPC Chairs</h2></div>
-<div class="committee-grid">
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/schmid.jpeg" /></div>
+                    <h3>Prof. (Dr.) Stefan Schmid</h3>
+                    <div class="designation-affiliation">Technical University of Berlin, Germany</div>
+                </div>
 
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="kishu.jpg" /></div>
-<h3>Dr. Kishu Gupta</h3>
-<div class="designation-affiliation">VIZJA University, Warsaw, Poland</div>
-</div>
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/lee.webp" /></div>
+                    <h3>Prof. (Dr.) Chung-Nan Lee</h3>
+                    <div class="designation-affiliation">National Sun-Yat-Sen University, Kaohsiung, Taiwan</div>
+                </div>
 
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="neha.jpg" /></div>
-<h3>Dr. Neha Singh</h3>
-<div class="designation-affiliation">IIIT Bhopal, India</div>
-</div>
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/sie.jpg" /></div>
+                    <h3>Prof. (Dr.) Sie Teng Soh</h3>
+                    <div class="designation-affiliation">Curtin University, Bentley, Western Australia</div>
+                </div>
+            </div>
 
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="rishabh.jpg" /></div>
-<h3>Dr. Rishabh Gupta</h3>
-<div class="designation-affiliation">IIIT Vadodara, India</div>
-</div>
-</div>
+            <br>
+            <div class="section-header">
+                <h2 class="section-title">General Chairs</h2>
+            </div>
+            <div class="committee-grid">
 
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/vinaytosh.jpeg" /></div>
+                    <h3>Prof. (Dr.) Vinaytosh Mishra</h3>
+                    <div class="designation-affiliation">Gulf Medical University, UAE</div>
+                </div>
 
-<br> <div class="section-header"> 
-<h2 class="section-title">Conference Secretary</h2></div>
-<div class="committee-grid">
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="nikhil.jpg" /></div>
-<h3>Dr. Nikhil K. Singh</h3>
-<div class="designation-affiliation">IIIT Bhopal, India</div>
-</div>
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="subrajyoti.jpg" /></div>
-<h3>Dr. Subrajyoti</h3>
-<div class="designation-affiliation">IIIT Bhopal, India</div>
-</div>
-</div>
-
-
-<br> <div class="section-header"> 
-<h2 class="section-title">Special Track Chairs</h2></div>
-<div class="committee-grid">
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="rahul.jpg" /></div>
-<h3>Dr. Rahul Chaurasia</h3>
-<div class="designation-affiliation">IIIT Bhopal, India</div>
-</div>
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="rajneesh.jpg" /></div>
-<h3>Dr. Rajneesh Chaurasiya</h3>
-<div class="designation-affiliation">IIIT Bhopal, India</div>
-</div>
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="gaurav.jpg" /></div>
-<h3>Dr. Gaurav Khanna</h3>
-<div class="designation-affiliation">IIIT Bhopal, India</div>
-</div>
-</div>
-
-<br> <div class="section-header"> 
-<h2 class="section-title">Publicity Chairs</h2></div>
-<div class="committee-grid">
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="yatendra.jpg" /></div>
-<h3>Dr. Yatendra Sahu</h3>
-</div>
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="nikhilraj.jpg" /></div>
-<h3>Dr. Nikhil Raj</h3>
-</div>
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="sakshi.jpg" /></div>
-<h3>Dr. Sakshi Patni</h3>
-</div>
-</div>
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/garenth.jpeg" /></div>
+                    <h3>Prof. (Dr.) Garenth Lim King Hann</h3>
+                    <div class="designation-affiliation">Curtin University, Malaysia</div>
+                </div>
+            </div>
 
 
-<br> <div class="section-header"> 
-<h2 class="section-title">Local Organizing Committee</h2></div>
-<div class="committee-grid">
+            <br>
+            <div class="section-header">
+                <h2 class="section-title">Conference Chairs</h2>
+            </div>
+            <div class="committee-grid">
 
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="gagan.jpg" /></div>
-<h3>Dr. Gagan Vishwakarma</h3>
-<div class="designation-affiliation">IIIT Bhopal, India</div>
-</div>
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/jitendra.jpeg" /></div>
+                    <h3>Dr. Jitendra Kumar</h3>
+                    <div class="designation-affiliation">Maulana Azad National Institute of Technology Bhopal, India
+                    </div>
+                </div>
 
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="kamlesh.jpg" /></div>
-<h3>Dr. Kamlesh Kumar Chauhan</h3>
-<div class="designation-affiliation">IIIT Bhopal, India</div>
-</div>
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/deepika.jpeg" /></div>
+                    <h3>Dr. Deepika Saxena</h3>
+                    <div class="designation-affiliation">University of Aizu, Japan</div>
+                </div>
 
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="akhilendra.jpg" /></div>
-<h3>Dr. Akhilendra Pratap Singh</h3>
-<div class="designation-affiliation">IIIT Bhopal, India</div>
-</div>
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="meenakshi.jpg" /></div>
-<h3>Dr. Meenakshi Choudhary</h3>
-<div class="designation-affiliation">IIIT Bhopal, India</div>
-</div>
-</div>
-
-<br> <div class="section-header"> 
-<h2 class="section-title">Technical Program Committee Members (TBD)</h2></div>
-<div class="committee-grid">
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="sourabh.jpg" /></div>
-<h3>Dr. Sourabh Jain</h3>
-</div>
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="pawan.jpg" /></div>
-<h3>Dr. Pawan Kumar</h3>
-</div>
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="abhinav.jpg" /></div>
-<h3>Dr. Abhinav Singh Parihar</h3>
-</div>
-
-<div class="committee-card">
-<div class="committee-photo"><img style="width: 100%; height: auto;" src="priyankar.jpg" /></div>
-<h3>Dr. Priyankar Choudhary</h3>
-</div>
-</div>
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/aaisha.jpeg" /></div>
+                    <h3>Dr. Aaisha Makkar</h3>
+                    <div class="designation-affiliation">University of Derby, United Kingdom</div>
+                </div>
+            </div>
 
 
-</div>
+            <br>
+            <div class="section-header">
+                <h2 class="section-title">TPC Chairs</h2>
+            </div>
+            <div class="committee-grid">
 
-   </div>
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/kishu.webp" /></div>
+                    <h3>Dr. Kishu Gupta</h3>
+                    <div class="designation-affiliation">VIZJA University, Warsaw, Poland</div>
+                </div>
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/neha.jpeg" /></div>
+                    <h3>Dr. Neha Singh</h3>
+                    <div class="designation-affiliation">IIIT Bhopal, India</div>
+                </div>
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/rishabh.jpg" /></div>
+                    <h3>Dr. Rishabh Gupta</h3>
+                    <div class="designation-affiliation">IIIT Vadodara, India</div>
+                </div>
+            </div>
+
+
+            <br>
+            <div class="section-header">
+                <h2 class="section-title">Conference Secretary</h2>
+            </div>
+            <div class="committee-grid">
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/nikhil.jpg" /></div>
+                    <h3>Dr. Nikhil K. Singh</h3>
+                    <div class="designation-affiliation">IIIT Bhopal, India</div>
+                </div>
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: 75%; border-radius: 50%;" src="Assets/People/Subhrajyoti.jpg" /></div>
+                    <h3>Dr. Subrajyoti</h3>
+                    <div class="designation-affiliation">IIIT Bhopal, India</div>
+                </div>
+            </div>
+
+
+            <br>
+            <div class="section-header">
+                <h2 class="section-title">Special Track Chairs</h2>
+            </div>
+            <div class="committee-grid">
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: 75%; border-radius: 50%;" src="Assets/People/rahul.jpg" /></div>
+                    <h3>Dr. Rahul Chaurasia</h3>
+                    <div class="designation-affiliation">IIIT Bhopal, India</div>
+                </div>
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: auto; border-radius: 50%;" src="Assets/People/rajnesh.jpeg" /></div>
+                    <h3>Dr. Rajneesh Chaurasiya</h3>
+                    <div class="designation-affiliation">IIIT Bhopal, India</div>
+                </div>
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: 75%; border-radius: 50%;" src="Assets/People/gaurav.jpg" /></div>
+                    <h3>Dr. Gaurav Khanna</h3>
+                    <div class="designation-affiliation">IIIT Bhopal, India</div>
+                </div>
+            </div>
+
+            <br>
+            <div class="section-header">
+                <h2 class="section-title">Publicity Chairs</h2>
+            </div>
+            <div class="committee-grid">
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: 75%; border-radius: 50%;" src="Assets/People/sahu.jpg" /></div>
+                    <h3>Dr. Yatendra Sahu</h3>
+                    <div class="designation-affiliation">IIIT Bhopal, India</div>
+                </div>
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: 75%; border-radius: 50%;" src="Assets/People/nikhilraj.jpg" /></div>
+                    <h3>Dr. Nikhil Raj</h3>
+                </div>
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: 75%; border-radius: 50%;" src="Assets/People/sakshi.jpg" /></div>
+                    <h3>Dr. Sakshi Patni</h3>
+                </div>
+            </div>
+
+
+            <br>
+            <div class="section-header">
+                <h2 class="section-title">Local Organizing Committee</h2>
+            </div>
+            <div class="committee-grid">
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: 75%; border-radius: 50%;" src="Assets/People/gagan.jpeg" /></div>
+                    <h3>Dr. Gagan Vishwakarma</h3>
+                    <div class="designation-affiliation">IIIT Bhopal, India</div>
+                </div>
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: 75%; border-radius: 50%;" src="Assets/People/kamlesh.jpg" /></div>
+                    <h3>Dr. Kamlesh Kumar Chauhan</h3>
+                    <div class="designation-affiliation">IIIT Bhopal, India</div>
+                </div>
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: 75%; border-radius: 50%;" src="Assets/People/akhilendra.jpg" /></div>
+                    <h3>Dr. Akhilendra Pratap Singh</h3>
+                    <div class="designation-affiliation">IIIT Bhopal, India</div>
+                </div>
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: 75%; border-radius: 50%;" src="Assets/People/meenakshi.jpg" /></div>
+                    <h3>Dr. Meenakshi Choudhary</h3>
+                    <div class="designation-affiliation">IIIT Bhopal, India</div>
+                </div>
+            </div>
+
+            <br>
+            <div class="section-header">
+                <h2 class="section-title">Technical Program Committee Members (TBD)</h2>
+            </div>
+            <div class="committee-grid">
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: 75%; border-radius: 50%;" src="Assets/People/Sourabh.jpg" /></div>
+                    <h3>Dr. Sourabh Jain</h3>
+                    <div class="designation-affiliation">IIIT Bhopal, India</div>
+                </div>
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: 75%; border-radius: 50%;" src="Assets/People/pawan.jpg" /></div>
+                    <h3>Dr. Pawan Kumar</h3>
+                    <div class="designation-affiliation">IIIT Bhopal, India</div>
+                </div>
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: 75%; border-radius: 50%;" src="Assets/People/abhinav.jpg" /></div>
+                    <h3>Dr. Abhinav Singh Parihar</h3>
+                    <div class="designation-affiliation">IIIT Bhopal, India</div>
+                </div>
+
+                <div class="committee-card">
+                    <div class="committee-photo"><img style="width: 75%; height: 75%; border-radius: 50%;" src="Assets/People/priyankar.jpg" /></div>
+                    <h3>Dr. Priyankar Choudhary</h3>
+                    <div class="designation-affiliation">IIIT Bhopal, India</div>
+                </div>
+            </div>
+
+
+        </div>
+
+        </div>
     </section>
 
 
-   <!-- Committee Section -->
+    <!-- Committee Section -->
     <section id="for-authors">
         <div class="section-container">
             <div class="section-header">
@@ -1538,110 +1607,132 @@ img {
                     Guidlines for Authors for Paper Submission.
                 </p>
             </div>
-			<h2> </h2>
-			<ul style="text-align:justify;">
-	<li>Guidelines: <a href="https://drive.google.com/file/d/1yXcIDe4EW2Ly3y1XGUMGdUQ-ilg4JFYp/view?usp=drive_link" target="_blank"> </a> Click Here. <br>(Authors are advised to prepare the manuscript as per conference guidelines) </li>
-	<li>Templates: <a href="https://drive.google.com/file/d/12yRbb7lrt51iTPiTYcQzb9mfENONEw2T/view?usp=sharing" target="_blank"> </a>, LaTeX<a href="https://docs.google.com/document/d/1bcD3DF9isvhi7EJrMIGrFw6DEMCEbqjklLmAMQlUz_4/edit?usp=sharing" target="_blank"></a> MS-Word (Authors are suggested to prefer LaTeX template)</li>
-<li>	Submissions should be made through Microsoft CMT: <a href="https://cmt3.research.microsoft.com/ICA2S2026" target="_blank">https://cmt3.research.microsoft.com/ICA2S2026</a></li>
-<li> Step by Step Paper Submission Procedure: <a href="https://drive.google.com/file/d/1Ng4-Y1NRcQZGUNV70MSVHwJl4Hg6YURd/view?usp=share_link" target="_blank">   </a> Click Here.</li>
-<li>Authors should clearly identify the problem, their contributions, and justification with respect to the state-of-the-art works.</li>
-<li> The program committee would like to review papers that develop, argue, and provide results. </li>
-<li>	Ensure that all co-authors have approved the final version of the manuscript before submission. </li>
-<li>	All submitted manuscripts will undergo a single blind review process by experts in the field.</li>
-<li>	Authors will be notified of the acceptance status of their manuscripts and any required revisions.</li>
-<li>	Authors are expected to address reviewers' comments and revise their manuscripts accordingly within the specified timeframe.</li>
-<li>	The review process considers both the quality of writing and the scientific impact of the work. Authors should clearly identify the problem, explain their contribution(s), and justify the state-of-the-art works. The program committee would like to review those who develop, argue, and provide results.</li>
-<li>	Also, note that the reviewers team takes care of plagiarism (even self-plagiarism) as serious professional misconduct. All papers will be screened for plagiarism, and the team will reject them in case there exists significant overlap with the previously published papers/papers.</li>
-</ul>
-			
-			<div class="committee-grid">
-		</div>
-		</div>
-	</section>
+            <h2> </h2>
+            <ul style="text-align:justify;">
+                <li>Guidelines: <a
+                        href="https://drive.google.com/file/d/1yXcIDe4EW2Ly3y1XGUMGdUQ-ilg4JFYp/view?usp=drive_link"
+                        target="_blank"> </a> Click Here. <br>(Authors are advised to prepare the manuscript as per
+                    conference guidelines) </li>
+                <li>Templates: <a
+                        href="https://drive.google.com/file/d/12yRbb7lrt51iTPiTYcQzb9mfENONEw2T/view?usp=sharing"
+                        target="_blank"> </a>, LaTeX<a
+                        href="https://docs.google.com/document/d/1bcD3DF9isvhi7EJrMIGrFw6DEMCEbqjklLmAMQlUz_4/edit?usp=sharing"
+                        target="_blank"></a> MS-Word (Authors are suggested to prefer LaTeX template)</li>
+                <li> Submissions should be made through Microsoft CMT: <a
+                        href="https://cmt3.research.microsoft.com/ICA2S2026"
+                        target="_blank">https://cmt3.research.microsoft.com/ICA2S2026</a></li>
+                <li> Step by Step Paper Submission Procedure: <a
+                        href="https://drive.google.com/file/d/1Ng4-Y1NRcQZGUNV70MSVHwJl4Hg6YURd/view?usp=share_link"
+                        target="_blank"> </a> Click Here.</li>
+                <li>Authors should clearly identify the problem, their contributions, and justification with respect to
+                    the state-of-the-art works.</li>
+                <li> The program committee would like to review papers that develop, argue, and provide results. </li>
+                <li> Ensure that all co-authors have approved the final version of the manuscript before submission.
+                </li>
+                <li> All submitted manuscripts will undergo a single blind review process by experts in the field.</li>
+                <li> Authors will be notified of the acceptance status of their manuscripts and any required revisions.
+                </li>
+                <li> Authors are expected to address reviewers' comments and revise their manuscripts accordingly within
+                    the specified timeframe.</li>
+                <li> The review process considers both the quality of writing and the scientific impact of the work.
+                    Authors should clearly identify the problem, explain their contribution(s), and justify the
+                    state-of-the-art works. The program committee would like to review those who develop, argue, and
+                    provide results.</li>
+                <li> Also, note that the reviewers team takes care of plagiarism (even self-plagiarism) as serious
+                    professional misconduct. All papers will be screened for plagiarism, and the team will reject them
+                    in case there exists significant overlap with the previously published papers/papers.</li>
+            </ul>
+
+            <div class="committee-grid">
+            </div>
+        </div>
+    </section>
 
     <section id="special-track">
         <div class="section-container">
             <div class="section-header">
                 <h2 class="section-title"> Call for Special Sessions / Tracks</h2>
                 <p class="section-description">
-                
+
 
                 </p>
             </div>
-			
-			
-			The ICA2S 2026 invites proposals for Special Sessions and Tracks as part of the upcoming conference. These sessions provide an excellent opportunity to highlight emerging topics, foster in-depth discussions, and bring together researchers working in focused areas. A special session may span from a quarter-day to a half-day and should include at least four peer-reviewed papers.
-						
-			<div class="">
-			   All accepted papers will be published in the ICA2S 2026 Conference Proceedings and must therefore meet the same high-quality standards as regular submissions. Each paper will undergo a rigorous peer-review process.
-			<h2 class="">
-        Proposal Guidelines
-      </h2>
-      <ul class="" style="margin-left:30px;">
-        <li><strong>Session Title</strong></li>
-        <li>
-          <strong>Session Overview / Scope</strong> – a brief abstract
-          describing the theme and objectives
-        </li>
-        <li>
-          <strong>Organizer Details</strong> – names, contact emails, and a
-          short professional biography
-        </li>
-        <li>
-          <strong>Submission Deadline</strong> –
-          <span class="text-purple-400">March 20, 2026</span>
-        </li>
-      </ul>
 
-      <p class="">
-        The organizing committee will review all proposals based on relevance,
-        originality, and quality. Selected proposals will be notified
-        accordingly. Please note that sessions with an insufficient number of
-        accepted papers may be cancelled, in which case the accepted papers will
-        be reassigned to appropriate regular sessions.
-      </p>
 
-      <h2 class="">
-        Responsibilities of Session / Track Chairs
-      </h2>
-      <ul class="" style="margin-left:30px;">
-        <li>Proposing the session/track topic and potential contributors</li>
-        <li>
-          Inviting authors from their professional network (colleagues,
-          collaborators, students, etc.)
-        </li>
-        <li>
-          Actively promoting the Call for Contributions and encouraging
-          submissions
-        </li>
-        <li>
-          <strong>Recognition:</strong> Each Session/Track Chair will receive a
-          Certificate of Appreciation for their contribution to the conference
-        </li>
-      </ul>
+            The ICA2S 2026 invites proposals for Special Sessions and Tracks as part of the upcoming conference. These
+            sessions provide an excellent opportunity to highlight emerging topics, foster in-depth discussions, and
+            bring together researchers working in focused areas. A special session may span from a quarter-day to a
+            half-day and should include at least four peer-reviewed papers.
 
-      <h2 class="">
-        Proposal Submission
-      </h2>
-      <p class="">
-        Please send your proposal at
-        <a
-          href="mailto:conference@iiitbhopal.ac.in"
-          class=""
-        >
-          conference@iiitbhopal.ac.in
-        </a>
-        with subject line <em>Special Track Proposal for ICA2S 2026</em>
-      </p>
+            <div class="">
+                All accepted papers will be published in the ICA2S 2026 Conference Proceedings and must therefore meet
+                the same high-quality standards as regular submissions. Each paper will undergo a rigorous peer-review
+                process.
+                <h2 class="">
+                    Proposal Guidelines
+                </h2>
+                <ul class="" style="margin-left:30px;">
+                    <li><strong>Session Title</strong></li>
+                    <li>
+                        <strong>Session Overview / Scope</strong> – a brief abstract
+                        describing the theme and objectives
+                    </li>
+                    <li>
+                        <strong>Organizer Details</strong> – names, contact emails, and a
+                        short professional biography
+                    </li>
+                    <li>
+                        <strong>Submission Deadline</strong> –
+                        <span class="text-purple-400">March 20, 2026</span>
+                    </li>
+                </ul>
 
-      <p class="">
-        We look forward to your innovative ideas and contributions that will
-        help make ICA2S 2026 a dynamic and impactful event.
-      </p>
-   
-		</div>
-		</div>
-	</section>
+                <p class="">
+                    The organizing committee will review all proposals based on relevance,
+                    originality, and quality. Selected proposals will be notified
+                    accordingly. Please note that sessions with an insufficient number of
+                    accepted papers may be cancelled, in which case the accepted papers will
+                    be reassigned to appropriate regular sessions.
+                </p>
+
+                <h2 class="">
+                    Responsibilities of Session / Track Chairs
+                </h2>
+                <ul class="" style="margin-left:30px;">
+                    <li>Proposing the session/track topic and potential contributors</li>
+                    <li>
+                        Inviting authors from their professional network (colleagues,
+                        collaborators, students, etc.)
+                    </li>
+                    <li>
+                        Actively promoting the Call for Contributions and encouraging
+                        submissions
+                    </li>
+                    <li>
+                        <strong>Recognition:</strong> Each Session/Track Chair will receive a
+                        Certificate of Appreciation for their contribution to the conference
+                    </li>
+                </ul>
+
+                <h2 class="">
+                    Proposal Submission
+                </h2>
+                <p class="">
+                    Please send your proposal at
+                    <a href="mailto:conference@iiitbhopal.ac.in" class="">
+                        conference@iiitbhopal.ac.in
+                    </a>
+                    with subject line <em>Special Track Proposal for ICA2S 2026</em>
+                </p>
+
+                <p class="">
+                    We look forward to your innovative ideas and contributions that will
+                    help make ICA2S 2026 a dynamic and impactful event.
+                </p>
+
+            </div>
+        </div>
+    </section>
 
 
     <!-- Important Dates Section -->
@@ -1668,7 +1759,7 @@ img {
                         <div class="timeline-title"> Submission Deadline</div>
                     </div>
                 </div>
-				<div class="timeline-item">
+                <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <div class="timeline-date">July 15, 2026</div>
@@ -1710,94 +1801,206 @@ img {
                     Choose the registration type that best suits your needs
                 </p>
             </div>
-			
-<!-- ================= DESKTOP TABLE ================= -->
-<div class="table-container desktop-table">
-<table>
 
-<tr>
-<th rowspan="3">Author Category</th>
-<th colspan="4">Registration Type</th>
-</tr>
+            <!-- ================= DESKTOP TABLE ================= -->
+            <div class="table-container desktop-table">
+                <table>
 
-<tr>
-<th colspan="2">Indian (₹)</th>
-<th colspan="2">Overseas (USD)</th>
-</tr>
+                    <tr>
+                        <th rowspan="3">Author Category</th>
+                        <th colspan="4">Registration Type</th>
+                    </tr>
 
-<tr>
-<th>Early</th>
-<th>Regular</th>
-<th>Early</th>
-<th>Regular</th>
-</tr>
+                    <tr>
+                        <th colspan="2">Indian (₹)</th>
+                        <th colspan="2">Overseas (USD)</th>
+                    </tr>
 
-<tr><td>Student (author)</td><td>11000</td><td>13000</td><td>300</td><td>500</td></tr>
-<tr><td>Academician (author)</td><td>13000</td><td>15000</td><td>500</td><td>650</td></tr>
-<tr><td>Industry (author)</td><td>15000</td><td>18000</td><td>600</td><td>750</td></tr>
-<tr><td>Student (non-author)</td><td>5000</td><td>7000</td><td>100</td><td>200</td></tr>
-<tr><td>Academician (non-author)</td><td>7000</td><td>9000</td><td>200</td><td>300</td></tr>
-<tr><td>Industry (non-author)</td><td>10000</td><td>12000</td><td>250</td><td>350</td></tr>
-<tr><td>Additional Paper *</td><td>8000</td><td>10000</td><td>250</td><td>450</td></tr>
-<tr><td>Extra Page (Per Page)</td><td>1000</td><td>1000</td><td>25</td><td>25</td></tr>
+                    <tr>
+                        <th>Early</th>
+                        <th>Regular</th>
+                        <th>Early</th>
+                        <th>Regular</th>
+                    </tr>
 
-</table>
-</div>
+                    <tr>
+                        <td>Student (author)</td>
+                        <td>11000</td>
+                        <td>13000</td>
+                        <td>300</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>Academician (author)</td>
+                        <td>13000</td>
+                        <td>15000</td>
+                        <td>500</td>
+                        <td>650</td>
+                    </tr>
+                    <tr>
+                        <td>Industry (author)</td>
+                        <td>15000</td>
+                        <td>18000</td>
+                        <td>600</td>
+                        <td>750</td>
+                    </tr>
+                    <tr>
+                        <td>Student (non-author)</td>
+                        <td>5000</td>
+                        <td>7000</td>
+                        <td>100</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>Academician (non-author)</td>
+                        <td>7000</td>
+                        <td>9000</td>
+                        <td>200</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>Industry (non-author)</td>
+                        <td>10000</td>
+                        <td>12000</td>
+                        <td>250</td>
+                        <td>350</td>
+                    </tr>
+                    <tr>
+                        <td>Additional Paper *</td>
+                        <td>8000</td>
+                        <td>10000</td>
+                        <td>250</td>
+                        <td>450</td>
+                    </tr>
+                    <tr>
+                        <td>Extra Page (Per Page)</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                        <td>25</td>
+                        <td>25</td>
+                    </tr>
 
-<!-- ================= MOBILE INDIAN TABLE ================= -->
-<div class="mobile-table">
+                </table>
+            </div>
 
-<div class="caption">Indian (₹)</div>
+            <!-- ================= MOBILE INDIAN TABLE ================= -->
+            <div class="mobile-table">
 
-<table>
-<tr>
-<th>Category</th>
-<th>Early</th>
-<th>Regular</th>
-</tr>
+                <div class="caption">Indian (₹)</div>
 
-<tr><td>Student (author)</td><td>11000</td><td>13000</td></tr>
-<tr><td>Academician (author)</td><td>13000</td><td>15000</td></tr>
-<tr><td>Industry (author)</td><td>15000</td><td>18000</td></tr>
-<tr><td>Student (non-author)</td><td>5000</td><td>7000</td></tr>
-<tr><td>Academician (non-author)</td><td>7000</td><td>9000</td></tr>
-<tr><td>Industry (non-author)</td><td>10000</td><td>12000</td></tr>
-<tr><td>Additional Paper *</td><td>8000</td><td>10000</td></tr>
-<tr><td>Extra Page (Per Page)</td><td>1000</td><td>1000</td></tr>
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Early</th>
+                        <th>Regular</th>
+                    </tr>
 
-</table>
+                    <tr>
+                        <td>Student (author)</td>
+                        <td>11000</td>
+                        <td>13000</td>
+                    </tr>
+                    <tr>
+                        <td>Academician (author)</td>
+                        <td>13000</td>
+                        <td>15000</td>
+                    </tr>
+                    <tr>
+                        <td>Industry (author)</td>
+                        <td>15000</td>
+                        <td>18000</td>
+                    </tr>
+                    <tr>
+                        <td>Student (non-author)</td>
+                        <td>5000</td>
+                        <td>7000</td>
+                    </tr>
+                    <tr>
+                        <td>Academician (non-author)</td>
+                        <td>7000</td>
+                        <td>9000</td>
+                    </tr>
+                    <tr>
+                        <td>Industry (non-author)</td>
+                        <td>10000</td>
+                        <td>12000</td>
+                    </tr>
+                    <tr>
+                        <td>Additional Paper *</td>
+                        <td>8000</td>
+                        <td>10000</td>
+                    </tr>
+                    <tr>
+                        <td>Extra Page (Per Page)</td>
+                        <td>1000</td>
+                        <td>1000</td>
+                    </tr>
 
-</div>
+                </table>
 
-<!-- ================= MOBILE OVERSEAS TABLE ================= -->
-<div class="mobile-table">
+            </div>
 
-<div class="caption">Overseas (USD)</div>
+            <!-- ================= MOBILE OVERSEAS TABLE ================= -->
+            <div class="mobile-table">
 
-<table>
-<tr>
-<th>Category</th>
-<th>Early</th>
-<th>Regular</th>
-</tr>
+                <div class="caption">Overseas (USD)</div>
 
-<tr><td>Student (author)</td><td>300</td><td>500</td></tr>
-<tr><td>Academician (author)</td><td>500</td><td>650</td></tr>
-<tr><td>Industry (author)</td><td>600</td><td>750</td></tr>
-<tr><td>Student (non-author)</td><td>100</td><td>200</td></tr>
-<tr><td>Academician (non-author)</td><td>200</td><td>300</td></tr>
-<tr><td>Industry (non-author)</td><td>250</td><td>350</td></tr>
-<tr><td>Additional Paper *</td><td>250</td><td>450</td></tr>
-<tr><td>Extra Page (Per Page)</td><td>25</td><td>25</td></tr>
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Early</th>
+                        <th>Regular</th>
+                    </tr>
 
-</table>
+                    <tr>
+                        <td>Student (author)</td>
+                        <td>300</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>Academician (author)</td>
+                        <td>500</td>
+                        <td>650</td>
+                    </tr>
+                    <tr>
+                        <td>Industry (author)</td>
+                        <td>600</td>
+                        <td>750</td>
+                    </tr>
+                    <tr>
+                        <td>Student (non-author)</td>
+                        <td>100</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>Academician (non-author)</td>
+                        <td>200</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>Industry (non-author)</td>
+                        <td>250</td>
+                        <td>350</td>
+                    </tr>
+                    <tr>
+                        <td>Additional Paper *</td>
+                        <td>250</td>
+                        <td>450</td>
+                    </tr>
+                    <tr>
+                        <td>Extra Page (Per Page)</td>
+                        <td>25</td>
+                        <td>25</td>
+                    </tr>
 
-</div>
-			
-			
-			
-			
-      </div>
+                </table>
+
+            </div>
+
+
+
+
+        </div>
     </section>
 
     <!-- Contact Section -->
@@ -1829,21 +2032,17 @@ img {
 
                 </div>
                 <div class="contact-info">
-                        <div class="contact-details">
-                            <h3>Address</h3>
-                            <p>Indian Institute of Information Technology Bhopal, Bhopal, Madhya Pradesh 462003, India</p>
-                        </div>
-              
-    <iframe 
-        src="https://www.google.com/maps?q=Indian+Institute+of+Information+Technology+Bhopal&output=embed"
-        width="100%" 
-        height="100%" 
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy">
-    </iframe>
-				   
-				   </div>
+                    <div class="contact-details">
+                        <h3>Address</h3>
+                        <p>Indian Institute of Information Technology Bhopal, Bhopal, Madhya Pradesh 462003, India</p>
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps?q=Indian+Institute+of+Information+Technology+Bhopal&output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+
+                </div>
             </div>
         </div>
     </section>
@@ -1856,13 +2055,13 @@ img {
                 Shaping the Future with Artificial Intelligence
             </p>
             <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
+                <a href="pages/home.html">Home</a>
+                <a href="pages/about.html">About</a>
                 <a href="#themes">Themes</a>
-                <a href="#timeline">Important Dates</a>
-                <a href="#committee">Committee</a>
-                <a href="#registration">Registration</a>
-                <a href="#contact">Contact</a>
+                <a href="pages/timeline.html">Important Dates</a>
+                <a href="pages/committee.html">Committee</a>
+                <a href="pages/registration.html">Registration</a>
+                <a href="pages/contact.html">Contact</a>
             </div>
             <div class="footer-copyright">
                 © 2026 ICA2S - International Conference on Advances in AI for Society. All Rights Reserved.
@@ -1876,12 +2075,12 @@ img {
         const menuToggle = document.getElementById('menuToggle');
         const navMenu = document.getElementById('navMenu');
         const navLinks = document.querySelectorAll('.nav-link');
-        
+
         menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
         });
-        
+
         // Close menu when clicking on a link (mobile)
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
@@ -1889,10 +2088,10 @@ img {
                 navMenu.classList.remove('active');
             });
         });
-        
+
         // Navigation scroll behavior
         const navbar = document.getElementById('navbar');
-        
+
         // Add scrolled class to navbar on scroll
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
@@ -1900,21 +2099,21 @@ img {
             } else {
                 navbar.classList.remove('scrolled');
             }
-            
+
             // Update active nav link based on scroll position
             updateActiveNavLink();
         });
-        
+
         // Update active navigation link
         function updateActiveNavLink() {
             const sections = document.querySelectorAll('section');
             const scrollPosition = window.scrollY + 100;
-            
+
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.offsetHeight;
                 const sectionId = section.getAttribute('id');
-                
+
                 if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                     navLinks.forEach(link => {
                         link.classList.remove('active');
@@ -1925,14 +2124,14 @@ img {
                 }
             });
         }
-        
+
         // Smooth scroll for navigation links
         navLinks.forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const targetId = link.getAttribute('href');
                 const targetSection = document.querySelector(targetId);
-                
+
                 if (targetSection) {
                     targetSection.scrollIntoView({
                         behavior: 'smooth',
@@ -1941,30 +2140,30 @@ img {
                 }
             });
         });
-        
+
         // Contact form submission
         const contactForm = document.getElementById('contactForm');
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             // Get form values
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
-            
+
             // Simple validation
             if (name && email && message) {
                 alert(`Thank you, ${name}! Your message has been received. We'll get back to you at ${email} soon.`);
                 contactForm.reset();
             }
         });
-        
+
         // Intersection Observer for animation on scroll
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
         };
-        
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1973,7 +2172,7 @@ img {
                 }
             });
         }, observerOptions);
-        
+
         // Observe all cards and animated elements
         document.querySelectorAll('.theme-card, .committee-card, .registration-card, .stat-card, .timeline-item').forEach(el => {
             el.style.opacity = '0';
@@ -1981,7 +2180,7 @@ img {
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
         });
-        
+
         // Registration button interactions
         const registerButtons = document.querySelectorAll('.register-button');
         registerButtons.forEach(button => {
@@ -1990,7 +2189,7 @@ img {
                 alert(`Registration for ${cardType} type selected! You would be redirected to the payment portal.`);
             });
         });
-        
+
         // CTA button smooth scroll
         document.querySelectorAll('.cta-button').forEach(button => {
             button.addEventListener('click', (e) => {
@@ -1998,7 +2197,7 @@ img {
                     e.preventDefault();
                     const targetId = button.getAttribute('href');
                     const targetSection = document.querySelector(targetId);
-                    
+
                     if (targetSection) {
                         targetSection.scrollIntoView({
                             behavior: 'smooth',
@@ -2010,4 +2209,5 @@ img {
         });
     </script>
 </body>
+
 </html>
