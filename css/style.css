@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    padding-top: 30px;
+    padding-top: 20px;
     font-family: 'Work Sans', sans-serif;
     color: var(--text-dark);
     line-height: 1.6;
@@ -29,7 +29,10 @@ body {
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
-a{ color: var(--accent-gold);}
+
+a {
+    color: var(--accent-gold);
+}
 
 /* Fixed Navigation */
 nav {
@@ -54,8 +57,8 @@ nav.scrolled {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 1.5rem;
+    justify-content: space-evenly;
+    padding: 0 1vw;
 }
 
 .logo {
@@ -68,6 +71,7 @@ nav.scrolled {
     align-items: center;
     gap: 0.5rem;
     z-index: 1001;
+    flex-shrink: 0;
 }
 
 .logo-accent {
@@ -120,14 +124,15 @@ nav.scrolled {
 
 .nav-menu a {
     display: block;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 0.45rem;
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     letter-spacing: 0.02em;
     transition: all 0.3s ease;
     position: relative;
+    white-space: nowrap;
 }
 
 .nav-menu a::before {
@@ -185,7 +190,7 @@ nav.scrolled {
     align-items: center;
     justify-content: center;
     position: relative;
-    
+
 }
 
 .hero::before {
@@ -205,10 +210,11 @@ nav.scrolled {
 }
 
 .hero-img {
-    
+
     max-width: 1200px;
     margin: 0px auto;
 }
+
 .hero-main {
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 50%, #1e40af 100%);
     margin: 0 auto;
@@ -216,7 +222,7 @@ nav.scrolled {
     text-align: center;
     position: relative;
     z-index: 1;
-    color:white;
+    color: white;
 }
 
 .hero-badge {
@@ -233,7 +239,7 @@ nav.scrolled {
 }
 
 .hero h1 {
-    
+
     font-size: clamp(1.6rem, 5vw, 2.5rem);
     font-weight: 900;
     color: white;
@@ -242,8 +248,8 @@ nav.scrolled {
     animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
-        .hero-main h1 {
-    
+.hero-main h1 {
+
     font-size: clamp(1.6rem, 5vw, 2.5rem);
     font-weight: 900;
     color: white;
@@ -318,6 +324,7 @@ nav.scrolled {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -448,7 +455,7 @@ section {
 .theme-icon {
     font-size: 1 rem;
     margin-bottom: 1rem;
-    font-style:bold;
+    font-style: bold;
     display: block;
 }
 
@@ -574,6 +581,52 @@ section {
 .committee-affiliation {
     color: var(--text-light);
     font-size: 0.85rem;
+}
+
+/* Text-only committee card (no photo) */
+.committee-grid-text {
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    align-items: stretch;
+}
+
+.committee-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.5rem 1.25rem;
+}
+
+.committee-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-teal));
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.85rem;
+    flex-shrink: 0;
+    letter-spacing: 0.5px;
+}
+
+.designation-affiliation {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-top: 0.2rem;
+    text-align: center;
+    word-break: break-word;
+}
+
+.designation-role {
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Registration Section */
@@ -812,58 +865,52 @@ footer {
     font-size: 0.85rem;
 }
 
-.table-container{
-width:100%;
-overflow-x:auto;
+.table-container {
+    width: 100%;
+    overflow-x: auto;
 }
 
 /* Common table style */
-table{
-border-collapse:collapse;
-width:100%;
-margin-bottom:20px;
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-th, td{
-border:1px solid #ddd;
-padding:10px;
-text-align:center;
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
 }
 
-th{
+th {}
 
-}
-
-tr:nth-child(even){
-background:#f9f9f9;
+tr:nth-child(even) {
+    background: #f9f9f9;
 }
 
 /* Hide mobile tables on desktop */
-.mobile-table{   display:none; }
+.mobile-table {
+    display: none;
+}
 
-.caption{
-font-size:20px;
-font-weight:bold;
-margin:15px 0;
+.caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
 }
 
 /* Mobile Responsive Styles */
-@media (max-width: 789px) {
-
-.hero-main { min-height: 100dvh; }
-
-.main { min-height: 100dvh; }
-.desktop-table{  display:none;}
-
-.mobile-table{   display:block; }
+@media (max-width: 1280px) {
     :root {
         --nav-height: 60px;
     }
-    
+
     .menu-toggle {
         display: flex;
     }
-    
+
     .nav-menu {
         position: fixed;
         top: var(--nav-height);
@@ -878,30 +925,51 @@ margin:15px 0;
         transition: left 0.3s ease;
         overflow-y: auto;
     }
-    
+
     .nav-menu.active {
         left: 0;
     }
-    
+
     .nav-menu li {
         width: 100%;
         text-align: center;
     }
-    
+
     .nav-menu a {
         padding: 1rem;
         font-size: 1.1rem;
         width: 100%;
     }
-    
+
     .nav-menu a::before {
         display: none;
     }
-    
+}
+
+/* Base Mobile Responsive Styles */
+@media (max-width: 789px) {
+
+    .hero-main {
+        min-height: 100dvh;
+    }
+
+    .main {
+        min-height: 100dvh;
+    }
+
+    .desktop-table {
+        display: none;
+    }
+
+    .mobile-table {
+        display: block;
+    }
+
+
     .hero h1 {
         font-size: 2rem;
     }
-    
+
     .hero-main h1 {
         font-size: 2rem;
     }
@@ -909,51 +977,51 @@ margin:15px 0;
     .hero-subtitle {
         font-size: 1rem;
     }
-    
+
     .hero-cta {
         width: 100%;
         max-width: 300px;
         margin: 0 auto;
     }
-    
+
     .cta-button {
         width: 100%;
     }
-    
+
     .section-title {
         font-size: 1.75rem;
     }
-    
+
     .section-description {
         font-size: 0.95rem;
     }
-    
+
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .themes-grid,
     .committee-grid,
     .registration-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .timeline::before {
         left: 15px;
     }
-    
+
     .timeline-item {
         padding-left: 50px;
     }
-    
+
     .timeline-dot {
         left: 6px;
     }
-    
+
     .contact-container {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-links {
         flex-direction: column;
         gap: 1rem;
@@ -964,21 +1032,23 @@ margin:15px 0;
     .logo {
         font-size: 1.2rem;
     }
-    
+
     .logo-accent {
         font-size: 1.4rem;
     }
-    
+
     .hero h1 {
         font-size: 1.75rem;
     }
+
     .hero-main h1 {
         font-size: 1.75rem;
-    }            
+    }
+
     .stats-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .registration-price {
         font-size: 2rem;
     }
@@ -990,43 +1060,157 @@ margin:15px 0;
         padding: 0.75rem 1rem;
         font-size: 0.9rem;
     }
-    
+
     .hero h1 {
         font-size: 3rem;
     }
-    
+
 
     .hero-main h1 {
         font-size: 3rem;
     }
+
     .themes-grid,
     .committee-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-.hero-subtitle a::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:-3px;
-  width:0;
-  height:2px;
-  background:#f59e0b;
-  transition:0.3s;
+.hero-subtitle a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: #f59e0b;
+    transition: 0.3s;
 }
 
-.hero-subtitle a:hover{
-  color:#fff;
-  text-shadow:0 0 8px rgba(245,158,11,0.8);
+.hero-subtitle a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(245, 158, 11, 0.8);
 }
 
-.hero-subtitle a:hover::after{
-  width:100%;
+.hero-subtitle a:hover::after {
+    width: 100%;
 }
 
 img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+/* ---- SUBMISSION PAGE STYLES ---- */
+.file-entry {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background: #fafafa;
+}
+
+.add-file-btn {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.remove-file-btn {
+    background-color: #ef4444;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+select {
+    width: 100%;
+    padding: 0.85rem;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.95rem;
+}
+
+/* ---- SUBMISSIONS LIST STYLES ---- */
+.table-wrapper {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    overflow-x: auto;
+}
+
+.submission-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.submission-table th,
+.submission-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.submission-table th {
+    background-color: var(--light-bg);
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.submission-table tbody tr:hover {
+    background-color: var(--light-bg);
+}
+
+.file-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.file-list li {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.05);
+}
+
+.file-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: var(--accent-teal);
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #0891b2;
+    color: white;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-light);
+    font-style: italic;
 }

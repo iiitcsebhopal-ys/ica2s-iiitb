@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Paper - ICA2S 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Work+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js" defer></script>
+
+</head>
+
+<body style="padding-top: 0px; margin: 0px;">
+    <!-- Fixed Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <section class="mainn" style="margin: 0; padding: 120px 0 60px; background: var(--light-bg); min-height: 100vh;">
+        <div class="section-container" style="max-width: 800px;">
+            <div class="section-header">
+                <span class="section-badge">Author Guidelines</span>
+                <h2 class="section-title">Paper Submission Form</h2>
+                <p class="section-description">Please fill out the form below to submit your manuscript for ICA2S 2026
+                </p>
+            </div>
+
+            <div class="contact-form">
+                <form id="submissionForm">
+                    <div class="form-group">
+                        <label for="docType">Type of Document *</label>
+                        <select id="docType" required>
+                            <option value="">Select Document Type</option>
+                            <option value="Full Paper">Full Paper</option>
+                            <option value="Block Diagram">Block Diagram</option>
+                            <option value="Abstract Only">Abstract Only</option>
+                            <option value="Complete Paper (LaTeX file in ZIP)">Complete Paper (LaTeX file in ZIP)
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="postTitle">Title of the Submission *</label>
+                        <input type="text" id="postTitle" required placeholder="Maximum 30 words"
+                            oninput="limitWords(this, 30)">
+                        <small style="color:var(--text-light);font-size:0.8rem;" id="titleWordCount">0 / 30
+                            words</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="submitDate">Date of Submission *</label>
+                        <input type="date" id="submitDate" required>
+                    </div>
+
+                    <div id="fileEntriesContainer">
+                        <div class="form-group">
+                            <label>Files to Upload *</label>
+                            <div class="file-entry">
+                                <label>File Name / Title (Max 20 words)</label>
+                                <input type="text" class="file-title" required placeholder="Enter file title"
+                                    oninput="limitWords(this, 20)">
+                                <label style="margin-top:10px;">Select File</label>
+                                <input type="file" class="file-upload" required
+                                    accept=".pdf,.doc,.docx,.zip,.png,.jpg,.jpeg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="add-file-btn" onclick="addFileEntry()">+ Add Another File</button>
+
+                    <button type="submit" class="submit-button">Submit Paper</button>
+                    <div id="formMessage" style="margin-top: 15px; font-weight: bold; text-align: center;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+
+</body>
+
+</html>
